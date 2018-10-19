@@ -5,19 +5,7 @@ Vue.use(Router)
 
 //路由表, 设置路由切换的规则
 let routes = [
-  {
-      path: '/',// 当浏览器的地址为 /
-        redirect:{name:'home'}
-  },
-  {
-      path: '/not-found',
-      name : 'not-found',
-      component: NotFound
-  }, 
-  {
-      path: '**',
-      redirect: {name: 'not-found'}
-  }
+
 ]
 
 //创建路由实例，传入配置项
