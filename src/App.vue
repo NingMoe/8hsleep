@@ -9,7 +9,12 @@ export default {
   name: 'App',
   components:{
     
-  }
+  },
+  // created(){
+  //   this.$http.get('api/lunbo').then(res=>{
+  //     console.log(res);
+  //   })
+  // }
 }
 </script>
 

@@ -11,20 +11,13 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/dt': {
-        target: 'https://www.duitang.com',//目标服务器
-        changeOrigin: true,
-        pathRewrite: {
-          '^/dt': ''
-        }
-      },
-      '/hh': {
-        target: 'http://m.8hsleep.com',//目标服务器
-        changeOrigin: true,
-        pathRewrite: {
-          '^/hh': ''
-        }
-      }
+      // '/api': {
+      //   target: 'http://10.3.137.17:8082',//目标服务器
+      //   changeOrigin: true,
+      //   pathRewrite: {
+      //     '^/api': ''
+      //   }
+      // }
     },
 
     // Various Dev Server settings
