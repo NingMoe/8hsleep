@@ -2,10 +2,56 @@ import Vue from 'vue'
 import Router from 'vue-router'
 Vue.use(Router)
 
-
+import Mine from '../components/pages/Mine/Mine'
+import Cart from '../components/pages/Cart/Cart'
+import Login from '../components/pages/Login/Login'
+import Register from '../components/pages/Register/Register'
+import MyOrder from '../components/pages/Mine/MyOrder/MyOrder'
+import MyAddress from '../components/pages/Mine/MyAddress/MyAddress'
+import MyInfo from '../components/pages/Mine/MyInfo/MyInfo'
+import ChangePassword from '../components/pages/Mine/ChangePassword/ChangePassword'
 //路由表, 设置路由切换的规则
 let routes = [
-
+    {
+        path:'/mine',
+        name:'mine',
+        component:Mine
+    },
+    {
+        path:'/cart',
+        name:'cart',
+        component:Cart
+    },
+    {
+        path:'/login',
+        name:'login',
+        component:Login
+    },
+    {
+        path:'/register',
+        name:'register',
+        component:Register
+    },
+    {
+        path:'/myorder',
+        name:'myorder',
+        component:MyOrder
+    },
+    {
+        path:'/address',
+        name:'address',
+        component:MyAddress
+    },
+    {
+        path:'/myinfo',
+        name:'myinfo',
+        component:MyInfo
+    },
+    {
+        path:'/changepassword',
+        name:'changepassword',
+        component:ChangePassword
+    }
 ]
 
 //创建路由实例，传入配置项
